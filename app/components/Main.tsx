@@ -3,42 +3,18 @@ import {
 	Award,
 	Bolt,
 	CircleUserRound,
-	Facebook,
-	GithubIcon,
+	GalleryVerticalEnd,
 	GraduationCap,
 	Info,
-	InstagramIcon,
-	LinkedinIcon,
 } from "lucide-react";
 import EducationTimeline from "./EducationTimeline";
 import ExperiencesTimeline from "./ExperiencesTimeline";
 import About from "./About";
 import Technologies from "./Technologies";
-import { Button } from "@/components/ui/button";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Main = () => {
-	const social_links = [
-		{
-			name: "Github",
-			link: "https://github.com/JhomarLC",
-			icon: <GithubIcon />,
-		},
-		{
-			name: "LinkedIn",
-			link: "https://www.linkedin.com/in/jhomar-candelario-7b84a7316/",
-			icon: <LinkedinIcon />,
-		},
-		{
-			name: "Facebook",
-			link: "https://www.facebook.com/j.cndlr/",
-			icon: <Facebook />,
-		},
-		{
-			name: "Instagram",
-			link: "https://www.instagram.com/j.cndlr/",
-			icon: <InstagramIcon />,
-		},
-	];
 	return (
 		<div className="max-w-lg md:max-w-4xl mx-auto">
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4">
@@ -77,33 +53,18 @@ const Main = () => {
 							<CircleUserRound />
 							Contact Me
 						</h1>
-						<p className="text-sm text-gray-600 text-justify">
-							Whether you have a question, a project idea, or just
-							want to connect, I&apos;d love to hear from you.
-						</p>
-						<div className="mt-4 grid grid-cols-2 gap-2">
-							{social_links.map((social, i) => (
-								<a
-									href={social.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									key={i}
-									className=""
-								>
-									<Button className="w-full rounded-sm">
-										{social.icon} {social.name}
-									</Button>
-								</a>
-							))}
-						</div>
-
-						<div className="mt-4">
-							<p className="text-sm text-gray-500 text-justify">
-								Looking forward to connecting with you!
-							</p>
-						</div>
+						<Contact />
 					</Card>
 				</div>
+				<Card className="w-full px-5 pb-5 md:col-span-3">
+					<h1 className="flex gap-2 py-5 text-lg font-bold text-center">
+						<GalleryVerticalEnd />
+						Latest Projects
+					</h1>
+					<div className="flex flex-col gap-5">
+						<Projects />
+					</div>
+				</Card>
 			</div>
 		</div>
 	);
