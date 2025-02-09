@@ -59,16 +59,7 @@ const Main = () => {
 							Whether you have a question, a project idea, or just
 							want to connect, I&apos;d love to hear from you.
 						</p>
-						<div className="mt-4 grid grid-cols-4  gap-2">
-							<a
-								href="https://www.instagram.com/j.cndlr/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Button className="rounded-sm">
-									<InstagramIcon />
-								</Button>
-							</a>
+						<div className="mt-4 grid grid-cols-4 gap-2">
 							<a
 								href="https://github.com/JhomarLC"
 								target="_blank"
@@ -94,6 +85,16 @@ const Main = () => {
 							>
 								<Button className="rounded-sm">
 									<Facebook />
+								</Button>
+							</a>
+							<a
+								href="https://www.instagram.com/j.cndlr/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="max-w-full"
+							>
+								<Button className="rounded-sm">
+									<InstagramIcon />
 								</Button>
 							</a>
 						</div>
