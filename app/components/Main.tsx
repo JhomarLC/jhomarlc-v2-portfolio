@@ -20,6 +20,13 @@ const Main = () => {
 	return (
 		<div className="max-w-lg md:max-w-4xl mx-auto">
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4">
+				<Card className="w-full px-5 md:col-span-2">
+					<h1 className="flex gap-2 py-5 text-lg font-bold text-center">
+						<Info />
+						About Me
+					</h1>
+					<About />
+				</Card>
 				<Card className="w-full px-5">
 					<h1 className="flex gap-2 py-5 text-lg font-bold text-center">
 						<GraduationCap />
@@ -27,12 +34,13 @@ const Main = () => {
 					</h1>
 					<EducationTimeline />
 				</Card>
+
 				<Card className="w-full px-5 md:col-span-2">
 					<h1 className="flex gap-2 py-5 text-lg font-bold text-center">
-						<Info />
-						About Me
+						<Award />
+						Achievements and Experiences
 					</h1>
-					<About />
+					<ExperiencesTimeline />
 				</Card>
 				<div className="w-full flex flex-col gap-4">
 					<Card className="w-full px-5">
@@ -97,14 +105,6 @@ const Main = () => {
 						</div>
 					</Card>
 				</div>
-
-				<Card className="w-full px-5 md:col-span-2">
-					<h1 className="flex gap-2 py-5 text-lg font-bold text-center">
-						<Award />
-						Achievements and Experiences
-					</h1>
-					<ExperiencesTimeline />
-				</Card>
 			</div>
 		</div>
 	);
