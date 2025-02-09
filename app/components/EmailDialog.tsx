@@ -42,7 +42,7 @@ export function EmailDialog() {
 					<MailOpen /> Send me an Email
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-md">
+			<DialogContent className="sm:max-w-md bg-white">
 				<DialogHeader>
 					<DialogTitle>Copy Email</DialogTitle>
 					<DialogDescription>
@@ -61,11 +61,6 @@ export function EmailDialog() {
 						/>
 					</div>
 					<Button
-						// onClick={() =>
-						// 	navigator.clipboard.writeText(
-						// 		"candelario.jhomarl@gmail.com"
-						// 	)
-						// }
 						onClick={CopyToClipboard}
 						type="submit"
 						size="sm"
