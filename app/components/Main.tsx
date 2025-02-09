@@ -17,6 +17,28 @@ import Technologies from "./Technologies";
 import { Button } from "@/components/ui/button";
 
 const Main = () => {
+	const social_links = [
+		{
+			name: "Github",
+			link: "https://github.com/JhomarLC",
+			icon: <GithubIcon />,
+		},
+		{
+			name: "LinkedIn",
+			link: "https://www.linkedin.com/in/jhomar-candelario-7b84a7316/",
+			icon: <LinkedinIcon />,
+		},
+		{
+			name: "Facebook",
+			link: "https://www.facebook.com/j.cndlr/",
+			icon: <Facebook />,
+		},
+		{
+			name: "Instagram",
+			link: "https://www.instagram.com/j.cndlr/",
+			icon: <InstagramIcon />,
+		},
+	];
 	return (
 		<div className="max-w-lg md:max-w-4xl mx-auto">
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4">
@@ -55,52 +77,28 @@ const Main = () => {
 							<CircleUserRound />
 							Contact Me
 						</h1>
-						<p className="text-sm text-gray-600">
+						<p className="text-sm text-gray-600 text-justify">
 							Whether you have a question, a project idea, or just
 							want to connect, I&apos;d love to hear from you.
 						</p>
-						<div className="mt-4 grid grid-cols-4 gap-2">
-							<a
-								href="https://github.com/JhomarLC"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Button className="rounded-sm">
-									<GithubIcon />
-								</Button>
-							</a>
-							<a
-								href="https://www.linkedin.com/in/jhomar-candelario-7b84a7316/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Button className="rounded-sm">
-									<LinkedinIcon />
-								</Button>
-							</a>
-							<a
-								href="https://www.facebook.com/j.cndlr/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Button className="rounded-sm">
-									<Facebook />
-								</Button>
-							</a>
-							<a
-								href="https://www.instagram.com/j.cndlr/"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="max-w-full"
-							>
-								<Button className="rounded-sm">
-									<InstagramIcon />
-								</Button>
-							</a>
+						<div className="mt-4 grid grid-cols-2 gap-2">
+							{social_links.map((social, i) => (
+								<a
+									href={social.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									key={i}
+									className=""
+								>
+									<Button className="w-full rounded-sm">
+										{social.icon} {social.name}
+									</Button>
+								</a>
+							))}
 						</div>
 
 						<div className="mt-4">
-							<p className="text-sm text-gray-500">
+							<p className="text-sm text-gray-500 text-justify">
 								Looking forward to connecting with you!
 							</p>
 						</div>
