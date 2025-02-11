@@ -20,12 +20,11 @@ const About = () => {
 				opportunities to grow.
 			</p>
 			<p className="mb-2 text-sm text-justify">
-				My goal is to become a skilled{" "}
-				<span className="font-bold">Software Engineer</span>,
-				contributing to projects that solve real-world problems. Whether
-				it&apos;s developing intuitive user experiences or optimizing
-				backend efficiency, I&apos;m always striving to improve and push
-				boundaries.
+				As a <span className="font-bold">Software Engineer</span>, I
+				like contributing to projects that solve real-world problems.
+				Whether it&apos;s developing intuitive user experiences or
+				optimizing backend efficiency, I&apos;m always striving to
+				improve and push boundaries.
 			</p>
 			<p className="mb-1 text-sm text-justify">
 				Let&apos;s connect! I&apos;m open to collaborations, learning

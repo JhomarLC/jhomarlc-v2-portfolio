@@ -41,7 +41,7 @@ const Nav = () => {
 							Nueva Ecija, Philippines
 						</span>
 					</p>
-					<Badge className="mt-1">Aspiring Software Engineer</Badge>
+					<Badge className="mt-1">Software Engineer</Badge>
 				</div>
 			</div>
 			{/* 
