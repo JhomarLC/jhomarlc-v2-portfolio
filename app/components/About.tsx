@@ -4,12 +4,12 @@ const About = () => {
 	return (
 		<>
 			<p className="mb-2 text-sm text-justify">
-				Hi, I&apos;m <span className="font-bold">Jhomar</span>, an
-				aspiring <span className="font-bold">Software Engineer</span>{" "}
-				passionate about building web and mobile solutions that make an
-				impact. While I&apos;m still in the early stages of my journey,
-				I&apos;m continuously learning and honing my skills to turn
-				ideas into functional, user-friendly applications.
+				Hi, I&apos;m <span className="font-bold">Jhomar</span>, a{" "}
+				<span className="font-bold">Software Engineer</span> passionate
+				about building web and mobile solutions that make an impact.
+				While I&apos;m still in the early stages of my journey, I&apos;m
+				continuously learning and honing my skills to turn ideas into
+				functional, user-friendly applications.
 			</p>
 			<p className="mb-2 text-sm text-justify">
 				What drives me is the collaborative nature of technology. I love
